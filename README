@@ -1,0 +1,12 @@
+The "J-SugarCRM UserSync" is a Joomla plugin to define integration as it allows the 
+interaction between two systems: Joomla (http://www.joomla.org) and SugarCRM (http://www.sugarcrm.com). 
+The object is integration of Joomla users, through the respective plugins are 
+synchronized with the users of SugarCRM, using technology that is the basis of Web services.
+
+The User and Technical Guide document of the plugin is available at my slideshare account:
+	a) UserGuide http://www.slideshare.net/amusarra/jsugarcrm-usersync-10
+	b) Technical Guide http://www.slideshare.net/amusarra/jsugarcrm-usersync-technicalguide
+
+Resources on the my Blog
+	a) Joomla Plugin: J-SugarCRM UserSync Technical Guide http://musarra.wordpress.com/2011/06/10/joomla-plugin-j-sugarcrm-usersync-technical-guide/
+	b) Joomla Plugin: J-SugarCRM UserSync http://musarra.wordpress.com/2011/05/18/joomla-plugin-j-sugarcrm-usersync/
