@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class plgUserSugarCRMUserSync</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class plgUserSugarCRMUserSync</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SugarCRM User Sync Plugin. When you create or update a user on Joomla,  the creation or update operations are also migrated to SugarCRM.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.5</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_sugarcrmusersync.php.html">/sugarcrmusersync.php</a> (line <span class="field"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a26">26</a></span>)
+		</p>
+		
+				
+		<pre>JPlugin
+   |
+   --plgUserSugarCRMUserSync</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																												
+												<div class="method-definition">
+											<span class="method-result">plgUserSugarCRMUserSync</span>
+										<a href="#plgUserSugarCRMUserSync" title="details" class="method-name">plgUserSugarCRMUserSync</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$subject</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$subject</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#onAfterDeleteUser" title="details" class="method-name">onAfterDeleteUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$succes</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#onAfterStoreUser" title="details" class="method-name">onAfterStoreUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isnew</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$success</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#onBeforeDeleteUser" title="details" class="method-name">onBeforeDeleteUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#onBeforeStoreUser" title="details" class="method-name">onBeforeStoreUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isnew</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#onLoginUser" title="details" class="method-name">onLoginUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$options</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#onLogoutUser" title="details" class="method-name">onLogoutUser</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodplgUserSugarCRMUserSync" id="plgUserSugarCRMUserSync"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor plgUserSugarCRMUserSync</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a39">39</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+<p class="description"><p>For php4 compatability we must not use the __constructor as a constructor for plugins  because func_get_args ( void ) returns a copy of all passed arguments NOT references.  This causes problems with cross-referencing necessary for the observer design pattern.</p></p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.5</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">plgUserSugarCRMUserSync</span>
+		<span class="method-name">
+			plgUserSugarCRMUserSync
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$subject</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$subject</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$subject</span><span class="var-description">: The object to observe</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: An array that holds the plugin configuration</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$subject</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonAfterDeleteUser" id="onAfterDeleteUser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">onAfterDeleteUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a150">150</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method is called after user data is deleted from the database</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			onAfterDeleteUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$succes</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the user data</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$succes</span><span class="var-description">: true if user was succesfully stored in the database</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg</span><span class="var-description">: message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonAfterStoreUser" id="onAfterStoreUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">onAfterStoreUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a72">72</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method is called after user data is stored in the database</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			onAfterStoreUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isnew</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$success</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the new user data</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isnew</span><span class="var-description">: true if a new user is stored</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$success</span><span class="var-description">: true if user was succesfully stored in the database</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg</span><span class="var-description">: message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonBeforeDeleteUser" id="onBeforeDeleteUser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">onBeforeDeleteUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a138">138</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method is called before user data is deleted from the database</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			onBeforeDeleteUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the user data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonBeforeStoreUser" id="onBeforeStoreUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">onBeforeStoreUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a58">58</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method is called before user data is stored in the database</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			onBeforeStoreUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isnew</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the old user data</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isnew</span><span class="var-description">: true if a new user is stored</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonLoginUser" id="onLoginUser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">onLoginUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a197">197</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method should handle any login logic and report back to the subject</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success</li>
+				<li><span class="field">since:</span> 1.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			onLoginUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$options</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the user data</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span><span class="var-description">: extra options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonLogoutUser" id="onLogoutUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">onLogoutUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_Joomla_JFramework_sugarcrmusersync.php.html#a224">224</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method should handle any logout logic and report back to the subject</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success</li>
+				<li><span class="field">since:</span> 1.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			onLogoutUser
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$user</span><span class="var-description">: holds the user data</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 23 Dec 2010 22:29:10 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
